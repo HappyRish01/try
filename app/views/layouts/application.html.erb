@@ -17,9 +17,11 @@
     <%= javascript_importmap_tags %>
     <link rel="stylesheet" href= "https://cdn.simplecss.org/simple.css">
   </head>
-  <%= render partial:"pages/navbar" %>
+  <%= render partial:"layouts/navbar" %>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
